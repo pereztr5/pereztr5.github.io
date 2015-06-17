@@ -62,79 +62,38 @@
 <div id="content-main">
 
 
-    <article class="post tag-getting-started">
+    <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="welcome-to-ghost/">Welcome to Ghost</a></h2>
-            <span class="post-meta"><time datetime="2015-06-16">June 16, 2015</time>  | Tags: <a href="tag/getting-started/">Getting Started</a></span>
+            <h2 class="post-title"><a href="network-visualization/">Network Visualization Project Log: 1</a></h2>
+            <span class="post-meta"><time datetime="2015-06-17">June 17, 2015</time> </span>
 
         </header>
         <section class="post-content">
-            <p></p><p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at <code>&lt;your blog URL&gt;/ghost/</code>. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</p>
+            <p></p><h5 id="intro">Intro</h5>
 
-<h2 id="gettingstarted">Getting Started</h2>
+<p>I am working on a network visualization web application. The purpose is to visual the network during cyber defense competitions. I am working with someone else. I am working on the server-side of the web app and setting up the testing infrastructure. My partner will be working on the client-side making the graphics using webGL. This project is suppose to be similar to Norse's <a href="http://localhost:2368/map.ipviking.com">map.ipviking.com</a> but for a local network and will show the different teams instead of continents.</p>
 
-<p>Ghost uses something called Markdown for writing. Essentially, it's a shorthand way to manage your post formatting as you write!</p>
-
-<p>Writing in Markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use <em>shortcuts</em> to <strong>style</strong> your content. For example, a list:</p>
+<h6 id="servicesused">Services Used:</h6>
 
 <ul>
-<li>Item number one</li>
-<li>Item number two
-<ul><li>A nested item</li></ul></li>
-<li>A final item</li>
+<li><a href="http://qosient.com/argus">Argus</a></li>
+<li><a href="https://nodejs.org">Node.js</a></li>
+<li><a href="http://socket.io">Socket.io</a></li>
 </ul>
 
-<p>or with numbers!</p>
+<p>The test environment will be on a CentOS 6.6 Virtual Machine. For now I will install everything on the same system.</p>
 
-<ol>
-<li>Remember to buy some milk  </li>
-<li>Drink the milk  </li>
-<li>Tweet that I remembered to buy the milk, and drank it</li>
-</ol>
+<p>Argus is a network monitoring tool that will used to capture and produce the network flow in real time. Node.js will be used with socket.io to make a web socket that will feed the client(s) information.</p>
 
-<h3 id="links">Links</h3>
+<h6 id="currentstatus">Current Status:</h6>
 
-<p>Want to link to a source? No problem. If you paste in a URL, like <a href="http://ghost.org">http://ghost.org</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href="http://ghost.org">the Ghost website</a>. Neat.</p>
+<ul>
+<li>The Argus server and client is working.</li>
+<li>Working on getting a demo up that will show the argus client information on a web page.</li>
+<li>Writing the Node.js server that will output the data.</li>
+</ul>
 
-<h3 id="whataboutimages">What about Images?</h3>
-
-<p>Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:</p>
-
-<p><img src="https://ghost.org/images/ghost.png" alt="The Ghost Logo"></p>
-
-<p>Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:</p>
-
-<h3 id="quoting">Quoting</h3>
-
-<p>Sometimes a link isn't enough, you want to quote someone on what they've said. Perhaps you've started using a new blogging platform and feel the sudden urge to share their slogan? A quote might be just the way to do it!</p>
-
-<blockquote>
-  <p>Ghost - Just a blogging platform</p>
-</blockquote>
-
-<h3 id="workingwithcode">Working with Code</h3>
-
-<p>Got a streak of geek? We've got you covered there, too. You can write inline <code>&lt;code&gt;</code> blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.</p>
-
-<pre><code>.awesome-thing {
-    display: block;
-    width: 100%;
-}
-</code></pre>
-
-<h3 id="readyforabreak">Ready for a Break?</h3>
-
-<p>Throw 3 or more dashes down on any new line and you've got yourself a fancy new divider. Aw yeah.</p>
-
-<hr>
-
-<h3 id="advancedusage">Advanced Usage</h3>
-
-<p>There's one fantastic secret about Markdown. If you want, you can write plain old HTML and it'll still work! Very flexible.</p>
-
-<p><input type="text" placeholder="I'm an input field!"></p>
-
-<p>That should be enough to get you started. Have fun - and let us know what you think :)</p>
+<p>Any suggestion please contact me <a href="mailto:pereztr@cs.sunyit.edu">@pereztr</a></p>
         </section>
     </article>
 
