@@ -1,0 +1,135 @@
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Network Visualization Project Log: 2</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/highlight/styles/railscasts.css?v=645f7930d5">
+    <script type="text/javascript" src="../assets/css/highlight/highlight.pack.js?v=645f7930d5"></script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=645f7930d5">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    
+    <link rel="canonical" href="index.html">
+    
+    <meta property="og:site_name" content="Tony's I/O">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Network Visualization Project Log: 2">
+    <meta property="og:description" content="Status As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make...">
+    <meta property="og:url" content="http://localhost:2368/network-visualization-project-log-2/">
+    <meta property="article:published_time" content="2015-06-25T19:13:34.840Z">
+    <meta property="article:modified_time" content="2015-06-25T19:13:34.839Z">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Network Visualization Project Log: 2">
+    <meta name="twitter:description" content="Status As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make...">
+    <meta name="twitter:url" content="http://localhost:2368/network-visualization-project-log-2/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Tony's I/O",
+    "author": {
+        "@type": "Person",
+        "name": "Tony Perez",
+        "url": "http://localhost:2368/author/tony",
+        "sameAs": null,
+        "description": null
+    },
+    "headline": "Network Visualization Project Log: 2",
+    "url": "http://localhost:2368/network-visualization-project-log-2/",
+    "datePublished": "2015-06-25T19:13:34.840Z",
+    "dateModified": "2015-06-25T19:13:34.839Z",
+    "description": "Status As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.6">
+    <link rel="alternate" type="application/rss+xml" title="Tony's I/O" href="../rss/index.html">
+</head>
+<body class="post-template">
+  <div id="content">
+    <div id="content-left">
+      <div class="vertical">
+        <div class="blog-title-wrap">
+        
+        <h1 class="blog-title"><a href="../">Tony's I/O</a></h1>
+        </div>
+
+        <div class="blog-description-wrap">
+        <h2 class="blog-description">Thoughts, stories and ideas.</h2>
+        </div>
+    </div>
+    </div>
+
+    
+
+<div id="content-main">
+
+  <article class="post">
+
+
+    <h2 class="post-title"><a href="index.html">Network Visualization Project Log: 2</a></h2>
+    <span class="post-meta"><time datetime="2015-06-25">June 25, 2015</time> </span>
+
+    <section class="post-content">
+      <h3 id="status">Status</h3>
+
+<p>As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make the websocket which will feed the client information. <br>
+Here is the results! <br>
+<img src="../content/images/2015/06/netvis.gif" alt="demo!"></p>
+
+<h3 id="nextstep">Next Step</h3>
+
+<p>Now I need clean up the server-side code and find a way to send it as json so when writing the client-side code it will be much easier. I also need to clean up and secure the websocket server as well as the Argus server. </p>
+
+<p>Check out the source code in my <a href="https://github.com/pereztr5/cybervis">github</a>! <br>
+Any suggestions are welcome <a href="mailto:pereztr@cs.sunyit.edu">@pereztr</a></p>
+    </section>
+
+    <footer class="post-footer">
+
+      <section class="share">
+        <h4>Share this post</h4>
+        <a class="icon-twitter" href="http://twitter.com/share?text=Network%20Visualization%20Project%20Log:%202&amp;url=http://localhost:2368/network-visualization-project-log-2/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="hidden">Twitter</span>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/network-visualization-project-log-2/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="hidden">Facebook</span>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/network-visualization-project-log-2/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+            <span class="hidden">Google+</span>
+        </a>
+      </section>
+
+    </footer>
+
+
+  </article>
+
+</div>
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="../rss/index.rss"><span class="tooltip">Subscribe!</span></a>
+        <div class="">
+             <section class="copyright">All content copyright <a href="../">Tony's I/O</a> © 2015 • All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"> </a>
+               <a href="http://ghost.org">Ghost</a> | 
+               <a href="https://github.com/dongri/Coder">Coder</a> theme forked from Casper by 
+               <a href="http://twitter.com/@dongriat">@dongriat</a></section>
+        </div>
+    </footer>
+
+    <script src="../public/jquery.js?v=645f7930d5"></script>
+
+    <script type="text/javascript" src="../assets/js/index.js?v=645f7930d5"></script>
+
+  </div>
+</body>

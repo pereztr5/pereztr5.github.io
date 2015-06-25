@@ -10,10 +10,10 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" type="text/css" href="assets/css/highlight/styles/railscasts.css?v=62e31d1580">
-    <script type="text/javascript" src="assets/css/highlight/highlight.pack.js?v=62e31d1580"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/highlight/styles/railscasts.css?v=645f7930d5">
+    <script type="text/javascript" src="assets/css/highlight/highlight.pack.js?v=645f7930d5"></script>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=62e31d1580">
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=645f7930d5">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     
     <link rel="canonical" href="index.html">
@@ -64,16 +64,39 @@
 
     <article class="post">
         <header class="post-header">
+            <h2 class="post-title"><a href="network-visualization-project-log-2/">Network Visualization Project Log: 2</a></h2>
+            <span class="post-meta"><time datetime="2015-06-25">June 25, 2015</time> </span>
+
+        </header>
+        <section class="post-content">
+            <p></p><h3 id="status">Status</h3>
+
+<p>As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make the websocket which will feed the client information. <br>
+Here is the results! <br>
+<img src="content/images/2015/06/netvis.gif" alt="demo!"></p>
+
+<h3 id="nextstep">Next Step</h3>
+
+<p>Now I need clean up the server-side code and find a way to send it as json so when writing the client-side code it will be much easier. I also need to clean up and secure the websocket server as well as the Argus server. </p>
+
+<p>Check out the source code in my <a href="https://github.com/pereztr5/cybervis">github</a>! <br>
+Any suggestions are welcome <a href="mailto:pereztr@cs.sunyit.edu">@pereztr</a></p>
+        </section>
+    </article>
+
+
+    <article class="post">
+        <header class="post-header">
             <h2 class="post-title"><a href="network-visualization/">Network Visualization Project Log: 1</a></h2>
             <span class="post-meta"><time datetime="2015-06-17">June 17, 2015</time> </span>
 
         </header>
         <section class="post-content">
-            <p></p><h5 id="intro">Intro</h5>
+            <p></p><h3 id="intro">Intro</h3>
 
 <p>I am working on a network visualization web application. The purpose is to visual the network during cyber defense competitions. I am working with someone else. I am working on the server-side of the web app and setting up the testing infrastructure. My partner will be working on the client-side making the graphics using webGL. This project is suppose to be similar to Norse's <a href="http://localhost:2368/map.ipviking.com">map.ipviking.com</a> but for a local network and will show the different teams instead of continents.</p>
 
-<h6 id="servicesused">Services Used:</h6>
+<h3 id="servicesused">Services Used:</h3>
 
 <ul>
 <li><a href="http://qosient.com/argus">Argus</a></li>
@@ -85,7 +108,7 @@
 
 <p>Argus is a network monitoring tool that will used to capture and produce the network flow in real time. Node.js will be used with socket.io to make a web socket that will feed the client(s) information.</p>
 
-<h6 id="currentstatus">Current Status:</h6>
+<h3 id="currentstatus">Current Status:</h3>
 
 <ul>
 <li>The Argus server and client is working.</li>
@@ -115,9 +138,9 @@
         </div>
     </footer>
 
-    <script src="public/jquery.js?v=62e31d1580"></script>
+    <script src="public/jquery.js?v=645f7930d5"></script>
 
-    <script type="text/javascript" src="assets/js/index.js?v=62e31d1580"></script>
+    <script type="text/javascript" src="assets/js/index.js?v=645f7930d5"></script>
 
   </div>
 </body>

@@ -1,10 +1,24 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Tony's I/O</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Wed, 17 Jun 2015 15:41:12 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Network Visualization Project Log: 1</title><description>&lt;h5 id="intro"&gt;Intro&lt;/h5&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Tony's I/O</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Thu, 25 Jun 2015 19:18:20 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Network Visualization Project Log: 2</title><description>&lt;h3 id="status"&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;I am working on a network visualization web application. The purpose is to visual the network during cyber defense competitions. I am working with someone else. I am working on the server-side of the web app and setting up the testing infrastructure. My partner will be working on the&lt;/p&gt;</description><link>http://localhost:2368/network-visualization/</link><guid isPermaLink="false">3606c5f7-1839-45b3-99ee-ba05b5f29af3</guid><dc:creator>Tony Perez</dc:creator><pubDate>Wed, 17 Jun 2015 15:40:27 GMT</pubDate><content:encoded>&lt;h5 id="intro"&gt;Intro&lt;/h5&gt;
+&lt;p&gt;As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make the websocket which will feed the client information. &lt;br&gt;
+Here is&lt;/p&gt;</description><link>http://localhost:2368/network-visualization-project-log-2/</link><guid isPermaLink="false">034a2776-e14e-45d7-8914-463730749997</guid><dc:creator>Tony Perez</dc:creator><pubDate>Thu, 25 Jun 2015 19:13:34 GMT</pubDate><content:encoded>&lt;h3 id="status"&gt;Status&lt;/h3&gt;
+
+&lt;p&gt;As of this post I have a working demo of Argus filtering the Network Flow to produce only the Start Time, Source IP, Source Port, Destination Port, and Destination Port. The Node.js server uses socket.io to make the websocket which will feed the client information. &lt;br&gt;
+Here is the results! &lt;br&gt;
+&lt;img src="http://localhost:2368/content/images/2015/06/netvis.gif" alt="demo!"&gt;&lt;/p&gt;
+
+&lt;h3 id="nextstep"&gt;Next Step&lt;/h3&gt;
+
+&lt;p&gt;Now I need clean up the server-side code and find a way to send it as json so when writing the client-side code it will be much easier. I also need to clean up and secure the websocket server as well as the Argus server. &lt;/p&gt;
+
+&lt;p&gt;Check out the source code in my &lt;a href="https://github.com/pereztr5/cybervis"&gt;github&lt;/a&gt;! &lt;br&gt;
+Any suggestions are welcome &lt;a href="mailto:pereztr@cs.sunyit.edu"&gt;@pereztr&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Network Visualization Project Log: 1</title><description>&lt;h3 id="intro"&gt;Intro&lt;/h3&gt;
+
+&lt;p&gt;I am working on a network visualization web application. The purpose is to visual the network during cyber defense competitions. I am working with someone else. I am working on the server-side of the web app and setting up the testing infrastructure. My partner will be working on the&lt;/p&gt;</description><link>http://localhost:2368/network-visualization/</link><guid isPermaLink="false">3606c5f7-1839-45b3-99ee-ba05b5f29af3</guid><dc:creator>Tony Perez</dc:creator><pubDate>Wed, 17 Jun 2015 15:40:27 GMT</pubDate><content:encoded>&lt;h3 id="intro"&gt;Intro&lt;/h3&gt;
 
 &lt;p&gt;I am working on a network visualization web application. The purpose is to visual the network during cyber defense competitions. I am working with someone else. I am working on the server-side of the web app and setting up the testing infrastructure. My partner will be working on the client-side making the graphics using webGL. This project is suppose to be similar to Norse's &lt;a href="http://localhost:2368/network-visualization/map.ipviking.com"&gt;map.ipviking.com&lt;/a&gt; but for a local network and will show the different teams instead of continents.&lt;/p&gt;
 
-&lt;h6 id="servicesused"&gt;Services Used:&lt;/h6&gt;
+&lt;h3 id="servicesused"&gt;Services Used:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://qosient.com/argus"&gt;Argus&lt;/a&gt;&lt;/li&gt;
@@ -16,7 +30,7 @@
 
 &lt;p&gt;Argus is a network monitoring tool that will used to capture and produce the network flow in real time. Node.js will be used with socket.io to make a web socket that will feed the client(s) information.&lt;/p&gt;
 
-&lt;h6 id="currentstatus"&gt;Current Status:&lt;/h6&gt;
+&lt;h3 id="currentstatus"&gt;Current Status:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The Argus server and client is working.&lt;/li&gt;
